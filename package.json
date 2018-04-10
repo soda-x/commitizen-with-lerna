@@ -7,7 +7,7 @@
     "ct": "git-cz",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "release": "lerna-semantic-release pre && lerna-semantic-release post && lerna-semantic-release perform"
+    "release": "lerna-semantic-release pre && lerna-semantic-release post"
   },
   "config": {
     "commitizen": {
