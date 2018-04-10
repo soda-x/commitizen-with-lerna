@@ -1,6 +1,6 @@
 {
-  "name": "package-b",
-  "version": "0.0.1-0",
+  "name": "package-b-pigcan",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
