@@ -7,17 +7,11 @@
     "ct": "git-cz",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "release": "standard-version"
+    "release": "lerna-semantic-release post"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
-    }
-  },
-  "standard-version": {
-    "skip": {
-      "commit": true,
-      "tag": true
     }
   },
   "lint-staged": {
@@ -33,9 +27,9 @@
     "cz-lerna-changelog": "^1.2.1",
     "husky": "^0.14.3",
     "lerna": "^2.10.1",
+    "lerna-semantic-release": "^9.1.0",
     "lint-staged": "^7.0.4",
-    "prettier": "^1.11.1",
-    "standard-version": "^4.3.0"
+    "prettier": "^1.11.1"
   },
   "repository": {
     "type": "git",
