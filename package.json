@@ -1,0 +1,51 @@
+{
+  "name": "commitizen-with-lerna",
+  "version": "1.0.0",
+  "description": "[WIP] Starter kit with lerna and zero-config for building a library in ES6, featuring Prettier, Semantic Release, and more!",
+  "main": "index.js",
+  "scripts": {
+    "ct": "git-cz",
+    "precommit": "lint-staged",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "release": "standard-version"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "standard-version": {
+    "skip": {
+      "commit": true,
+      "tag": true
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --trailing-comma es5 --single-quote --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^6.1.3",
+    "@commitlint/config-conventional": "^6.1.3",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
+    "cz-lerna-changelog": "^1.2.1",
+    "husky": "^0.14.3",
+    "lerna": "^2.10.1",
+    "lint-staged": "^7.0.4",
+    "prettier": "^1.11.1",
+    "standard-version": "^4.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pigcan/commitizen-with-lerna.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pigcan/commitizen-with-lerna/issues"
+  },
+  "homepage": "https://github.com/pigcan/commitizen-with-lerna#readme"
+}
