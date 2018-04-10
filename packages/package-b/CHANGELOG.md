@@ -1,10 +1,15 @@
-<a name="1.0.0"></a>
-# 1.0.0 (2018-04-10)
+<a name="1.1.0"></a>
+# 1.1.0 (2018-04-10)
+
+
+
+<a name="1.1.0"></a>
+# 1.1.0 (2018-04-10)
 
 
 ### Features
 
-* **change:** add missing package.json ([f175830](https://github.com/pigcan/commitizen-with-lerna/commit/f175830))
+* **b:** feat b ([968f3d8](https://github.com/pigcan/commitizen-with-lerna/commit/968f3d8))
 
 
 
